@@ -1,0 +1,19 @@
+[[region]]
+name = "bottom_dialog_box"
+# x = 320
+# y = 447
+# width = 640
+# height = 193
+x = 344
+y = 481
+width = 588
+height = 130
+processor = "DialogScroll"
+
+[[region]]
+name = "timestamp"
+x = 110
+y = 694
+width = 230
+height = 25
+processor = "FixedLine"

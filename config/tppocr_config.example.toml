@@ -1,0 +1,14 @@
+[[region]]
+name = "example_region_1"
+x = 100
+y = 200
+width = 300
+height = 300
+## See text_processor.rs for description of processor configs
+process = "FixedLine"
+# process = "DialogScrollLine"
+
+[[region]]
+name = "example_region_2"
+## The same parameters goes here
+## [...]

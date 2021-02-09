@@ -1,0 +1,33 @@
+[package]
+name = "tppocr"
+version = "0.0.0"
+edition = "2018"
+publish = false
+
+[dependencies]
+anyhow = "1.0.36"
+chrono = "0.4.19"
+clap = "2.33.3"
+eddie = "0.4.2"
+ffmpeg-next = "4.3.8"
+font-kit = "0.10.0"
+image = "0.23.12"
+lazy_static = "1.4.0"
+libc = "0.2.81"
+log = { version = "0.4.11", features = ["max_level_trace", "release_max_level_debug"] }
+nix = "0.19.1"
+raqote = { git = "https://github.com/jrmuizel/raqote" }
+serde = { version = "1.0.122", features = ["derive"] }
+signal-hook = "0.3.1"
+slog = { version = "2.5.2", features = ["max_level_trace", "release_max_level_debug"] }
+slog-async = "2.5.0"
+slog-scope = "4.3.0"
+slog-term = "2.6.0"
+tesseract-sys = "0.5.5"
+toml = "0.5.8"
+
+[build-dependencies]
+bindgen = "0.56.0"
+
+[patch.crates-io]
+ffmpeg-sys-next = { git = "https://github.com/kz6wk9/rust-ffmpeg-sys", rev = "0ff9c7931fa2efa9e90319b7141a6fd5a2f4a17c" }
